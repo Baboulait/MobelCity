@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+    float : left;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.menu {
+  overflow: hidden;
+  background-color: #ffd90d;
+}
+
+
+/* Style the menu links */
+.menu a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Footer */
+.footer {
+  text-align: start;
+  bottom: -10px;
+  background-color: grey;
+  margin-top : 10px;
+  height: 100px;
+  position :relative;
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  }
+
+  p.footer{
+    position : relative;
+  }
+
+
+.main {
+  display: block;
+  text-align: left;
+  background: #333;
+  float: left;
+  width: 100%;
+}
+
+.command {
+    padding: 4px 6px;
+    background: white;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.loader{
+	background: url('icon/loader-elipse.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+	cursor: wait;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+	.loader h1{
+		background: none;
+		border: none;
+		color: #458976;
+		font-size: 22px;
+		font-family: "Open Sans",sans-serif;
+		font-variant: small-caps;
+		font-weight: 700;
+		height: 700px;
+		line-height: 700px;
+		margin: 0 0 10px;
+		padding: 0;
+		text-align: center;
+	}
+
+#legende{
+  z-index: 9998;
+  height: 80px;
+  width: 600px;
+  margin-left:  10px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+#cartetab {
+  float: left;
+  width: 75%;
+}
+
+#carte {
+  z-index: 1;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 10px;
+  height: 96%;
+}
+
+#AfficheTableau{
+
+}
+
+#tableau {
+  background-color: #F0F8FF;
+  margin: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: height 1.5s;
+}
+
+#tableau:target {
+	height: 500px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border-spacing: 0px;
+}
+
+#tablofermer{ /* le bouton */
+  padding:6px 15px 6px 15px;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	width:100px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+  left : 200px;
+  margin-left: 10px;
+}
+
+#droite{
+  position: relative;
+  right: 0px;
+  width:  100%;
+}
+
+/* Right column */
+#selection{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 103%;
+  background-color: #f1f1f1;
+  padding-left: 15px;
+  border: solid;
+  height: 450px;
+  overflow-y: scroll;
+}
+/*
+#conseil{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  left:  850px;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  border: solid;
+}
+*/
+
+#conseil{
+  position: relative;
+  width: 103%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  border: solid;
+}
+
+#informationContainer{
+  position: absolute;
+  width: 23%;
+  right: 2%;
+}
+
+#credit{
+  margin-top: 10px;
+  weight: 50px;
+  height: 50px;
+}
+
+#credit2{
+  weight: 20px;
+  height: 20px;
+}
+
+#texte{
+  color: white;
+}
+
+/* Div pour les explications */
+
+p.presentation{
+  background-color: white;
+  height: auto;
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+p.explication{
+  background-color: white;
+  height: auto;
+  width: 50%;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.marge1 {
+margin-left: 1em;
+}
+
+.marge2 {
+margin-left: 3em;
+}
+
+#ligne0{
+  display : flex;
+
+}
+
+#ligne1{
+  display : flex;
+  justify-content : center;
+}
+
+#ligne2{
+  display : flex;
+  justify-content : center;
+}
+
+#ligne3{
+  display : flex;
+  justify-content : center;
+}
+
+#tabs ul li
+{
+    display:inline-block;
+    float:left;
+    height:24px;
+    min-width:80px;
+    text-align:center;
+    line-height: 22px;
+    padding:0 8px 0 8px;
+    margin: 1px 0px 0px 0px;
+    border: 1px solid gray;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background:#F0F0F0;
+}
+
+#photomethodo {
+  height: 350px;
+  width: 450px;
+}
+
+#CCM{
+  background-color: white;
+  margin-left: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  #cartetab, #selection {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+}
